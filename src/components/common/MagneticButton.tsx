@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-const MagneticButton = ({children , className, onClick}: any) => {
+const MagneticButton = ({children , className}: any) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseEnter = (e: any) => {
@@ -26,11 +26,10 @@ const MagneticButton = ({children , className, onClick}: any) => {
 
   return (
     <button 
-      onClick={onClick}
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={`${className || ''} transition-transform duration-500 ease-out`}
+      className={`rounded-full ${className || ''} text-white font-bold text-sm transition-transform duration-500 ease-out`}
     >
       {children}
     </button>
@@ -38,3 +37,4 @@ const MagneticButton = ({children , className, onClick}: any) => {
 };
 
 export default MagneticButton;
+

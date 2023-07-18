@@ -1,7 +1,7 @@
 import Banner from '@/components/homepage/banner'
 import Header from '@/components/homepage/header'
 import React from 'react'
-
+import About from '@/components/homepage/about'
 
 const Home = () => {
   return (
@@ -10,8 +10,8 @@ const Home = () => {
         <Header />
         <Banner />
       </div>
-      <div className='h-[200vh] '>
-        abcd
+      <div className='h-[200vh] bg-[#FFFEFE] '>
+         <About />
       </div>
     </div>
   )

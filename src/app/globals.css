@@ -52,3 +52,23 @@ li {
   align-items: center;
   cursor: pointer;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #414141;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}

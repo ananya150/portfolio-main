@@ -1,7 +1,7 @@
 'use client';
 import * as React from "react";
 import { useRef, useState, useEffect } from "react";
-import { motion, sync, useCycle } from "framer-motion";
+import { motion, sync, useCycle, useTime, useTransform } from "framer-motion";
 import { useDimensions } from "../../../utils.ts/use-dimension";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
@@ -26,11 +26,29 @@ const sidebar = {
   }
 };
 
+const sidebarVariants = {
+  hidden: {
+    scale: 0,
+    opacity: 0,
+    transition: {
+      duration: 2,
+    },
+  },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 2,
+    },
+  },
+};
+
 export const Sidebar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
+  const time = useTime();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,15 +66,20 @@ export const Sidebar = () => {
   }, []);
 
   return (
-    <motion.nav className={`fixed top-0 right-0 bottom-0 w-[100%] md:w-[600px] z-40 ${isVisible ? '' : 'hidden'}`}
-      initial={false}
-      animate={isOpen ? "open" : "closed"}
-      custom={height}
-      ref={containerRef}
-    >
-      <motion.div className="absolute top-0 right-0 bottom-0 w-[100%] md:w-[600px] dark:bg-[#fff] bg-[#1c1d20]" variants={sidebar} />
-        <Navigation />
-        <MenuToggle toggle={() => toggleOpen()} />
-      </motion.nav>
+    <motion.div className={`${isVisible ? '' : 'hidden'}`}>
+      <motion.nav className={`fixed top-0 right-0 bottom-0 w-[100%] md:w-[550px] z-40`}
+        initial={false}
+        animate={isOpen ? "open" : "closed"}
+        custom={height}
+        ref={containerRef}
+      >
+        <motion.div className="absolute top-0 right-0 bottom-0 w-[100%] md:w-[550px] dark:bg-[#fff] bg-[#1c1d20]" variants={sidebar} />
+          <Navigation />
+          <MenuToggle toggle={() => toggleOpen()} />
+        </motion.nav>
+        <motion.div
+          className={`fixed top-0 left-0 bottom-0 md:right-[0px] z-30 overlay ${isOpen? '' : 'hidden'}`}
+        />
+    </motion.div>
   );
 };
