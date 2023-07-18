@@ -45,7 +45,7 @@ const Curtain = () => {
         variants={curtainVariant}
         className="curtain"
       >
-        <motion.div variants={colorVariant} className="fixed top-0 left-0 h-full w-full origin-right will-change-transform z-50 dark:bg-[#fff] bg-[#1c1d20]" />
+        <motion.div variants={colorVariant} className="fixed top-0 left-0 h-full w-full origin-right will-change-transform z-50 bg-[#fff]" />
       </motion.div>
     </AnimatePresence>
   )

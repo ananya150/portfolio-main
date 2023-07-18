@@ -4,7 +4,7 @@ import { Sidebar } from './sidebar/Sidebar'
 
 const Common = () => {
   return (
-    <div className='dark'>
+    <div className='overflow-x-clip'>
         <Curtain />
         <Sidebar />
     </div>

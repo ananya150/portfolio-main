@@ -35,7 +35,7 @@ export const Sidebar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 200; // Adjust this value as needed
+      const threshold = window.innerHeight; // Adjust this value as needed
 
       setIsVisible(scrollPosition > threshold);
     };
