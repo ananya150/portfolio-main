@@ -9,8 +9,8 @@ import {
     MotionValue
   } from "framer-motion";
 
-  function useParallax(value: MotionValue<number>, distance: number) {
-    return useTransform(value, [0, 1], [distance, -distance]);
+  function useParallax(value: MotionValue<number>, distanceDown: number, distanceUp: number) {
+    return useTransform(value, [0, 1], [distanceDown, -distanceUp]);
   }
   
 
@@ -18,7 +18,7 @@ const About = () => {
 
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ target: ref });
-    const y = useParallax(scrollYProgress, 200);
+    const y = useParallax(scrollYProgress, 300,120);
   
 
   return (

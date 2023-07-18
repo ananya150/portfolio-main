@@ -72,3 +72,7 @@ html {
 .overlay {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+.curved {
+  clip-path: circle(250vh at 50% -120vh);
+}

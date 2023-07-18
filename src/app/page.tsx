@@ -2,6 +2,7 @@ import Banner from '@/components/homepage/banner'
 import Header from '@/components/homepage/header'
 import React from 'react'
 import About from '@/components/homepage/about'
+import Work from '@/components/homepage/work'
 
 const Home = () => {
   return (
@@ -12,6 +13,8 @@ const Home = () => {
       </div>
       <div className='h-[200vh] bg-[#FFFEFE] '>
          <About />
+         <Work />
+
       </div>
     </div>
   )
