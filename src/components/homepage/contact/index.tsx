@@ -35,8 +35,21 @@ const Contact = () => {
             <MagneticButton className="hover:bg-[#445DE9] hover:border-[#445DE9] px-10 py-5 text-[14px] font-normal border border-gray-400">+91 9024180290</MagneticButton>
           </motion.div>
         </div>
-        <footer className="absolute bottom-0 py-[3vh] text-base flex justify-between px-20 w-full">
-            <div className="flex space-x-8">
+
+        <div className="md:hidden h-full">
+            <div className="mx-[10vw]">
+                <motion.p  style={{ y:y1 }}className="font-satoshi text-[40px] font-medium tracking-wide text-white">Let&apos;s get in <br/> touch  </motion.p>
+                <hr className="h-px mt-[14vh] mb-[15vh] bg-gray-600 border-0"/>
+            </div>
+          <motion.div style={{x:x}} className="absolute bottom-[56vh] right-[20vw] z-20"><MagneticButton className="bg-[#445DE9] h-32 w-32 z-10 -translate-x-12 ">Get in touch</MagneticButton></motion.div>
+          <motion.div style={{ y:y2 }} className="mt-20 mx-[15vw] space-y-5">
+            <MagneticButton className="hover:bg-[#445DE9] hover:border-[#445DE9] w-full max-w-[400px] py-4 text-[14px] font-normal border border-gray-400">akblockchain15gmail.com</MagneticButton>
+            <MagneticButton className="hover:bg-[#445DE9] hover:border-[#445DE9] w-full max-w-[400px] py-4 text-[14px] font-normal border border-gray-400">+91 9024180290</MagneticButton>
+          </motion.div>
+        </div>
+
+        <footer className="absolute bottom-0 py-[3vh] text-base flex md:justify-between justify-center md:px-20  w-full">
+            <div className="flex space-x-8 hidden md:block">
                 <span className="text-white ">2023 © Edition</span>
                 <span className="text-white ">Ananya Khandelwal</span>
             </div>
