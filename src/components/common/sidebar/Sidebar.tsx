@@ -77,14 +77,14 @@ export const Sidebar = () => {
 
   return (
     <motion.div className={`${isVisible ? '' : 'hidden'}`}>
-      <motion.nav className={`fixed top-0 right-0 bottom-0 w-[100%] md:w-[550px] z-40`}
+      <motion.nav className={`fixed top-0 right-0 bottom-0 w-[100%] md:w-[650px] z-40`}
         initial={false}
         animate={open ? "open" : "closed"}
         custom={height}
         ref={containerRef}
       >
-        <motion.div className="absolute top-0 right-0 bottom-0 w-[100%] md:w-[550px] dark:bg-[#fff] bg-[#1c1d20]" variants={sidebar} />
-          <Navigation />
+        <motion.div className="absolute top-0 right-0 bottom-0 w-[100%] md:w-[650px] dark:bg-[#fff] bg-[#1c1d20]" variants={sidebar} />
+          <Navigation open={open} />
           <MenuToggle toggle={handleButtonCLick} />
         </motion.nav>
         <motion.div

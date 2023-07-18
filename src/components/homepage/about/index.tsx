@@ -35,7 +35,7 @@ const About = () => {
                         transition={{duration:2}}
                         
                     >
-                        <span className='font-satoshi text-[20px] xl:text-[39px] sm:text-[25px] font-[400]'>
+                        <span className='font-satoshi text-[20px] xl:text-[39px] sm:text-[25px] font-[400] xl:font-[500]'>
                             Revolutionizing the digital realm with elegant and functional solutions. A full-stack blockchain developer redefining industry standards.
                         </span>
                     </motion.div>
