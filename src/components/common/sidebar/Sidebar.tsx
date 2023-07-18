@@ -44,11 +44,19 @@ const sidebarVariants = {
 };
 
 export const Sidebar = () => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
+  const [open, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
   const time = useTime();
+
+  const handleButtonCLick = () => {
+    if(open){
+      setOpen(false);
+      return;
+    }
+    setOpen(true);
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,6 +64,8 @@ export const Sidebar = () => {
       const threshold = window.innerHeight; // Adjust this value as needed
 
       setIsVisible(scrollPosition > threshold);
+      if(scrollPosition < threshold) setOpen(false);
+      
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -69,16 +79,16 @@ export const Sidebar = () => {
     <motion.div className={`${isVisible ? '' : 'hidden'}`}>
       <motion.nav className={`fixed top-0 right-0 bottom-0 w-[100%] md:w-[550px] z-40`}
         initial={false}
-        animate={isOpen ? "open" : "closed"}
+        animate={open ? "open" : "closed"}
         custom={height}
         ref={containerRef}
       >
         <motion.div className="absolute top-0 right-0 bottom-0 w-[100%] md:w-[550px] dark:bg-[#fff] bg-[#1c1d20]" variants={sidebar} />
           <Navigation />
-          <MenuToggle toggle={() => toggleOpen()} />
+          <MenuToggle toggle={handleButtonCLick} />
         </motion.nav>
         <motion.div
-          className={`fixed top-0 left-0 bottom-0 md:right-[0px] z-30 overlay ${isOpen? '' : 'hidden'}`}
+          className={`fixed top-0 left-0 bottom-0 md:right-[0px] z-30 overlay ${open? '' : 'hidden'}`}
         />
     </motion.div>
   );
