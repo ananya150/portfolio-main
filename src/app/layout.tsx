@@ -1,4 +1,6 @@
 import './globals.css'
+import Common from '@/components/common/Common';
+import { ThemeContextProvider  } from '@/context/themeContext';
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +14,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-[#121212]'>{children}</body>
+      <head>
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,400&display=swap" rel="stylesheet"/>
+        <link href="https://api.fontshare.com/v2/css?f[]=author@600&display=swap" rel="stylesheet"/>
+        <link href="https://api.fontshare.com/v2/css?f[]=alpino@400&display=swap" rel="stylesheet"/>
+      </head>
+      <body>
+        <ThemeContextProvider>
+            <Common />
+            {children}
+        </ThemeContextProvider>
+      </body>
     </html>
   )
 }
