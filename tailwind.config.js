@@ -22,5 +22,26 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    // ...
+    function ({ addUtilities }) {
+      addUtilities(
+        {
+          ".custom-clip-path1": {
+            clipPath: "circle(250vh at 50% -120vh)",
+          },
+          ".custom-clip-path2": {
+            clipPath: "circle(330vh at 50% -155vh)",
+          },
+          ".custom-clip-path3": {
+            clipPath: "circle(330vh at 50% -155vh)",
+          },
+        },
+        {
+          variants: ["responsive"],
+        }
+      );
+    },
+  ],
+
 }

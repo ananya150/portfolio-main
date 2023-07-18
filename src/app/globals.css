@@ -76,3 +76,7 @@ html {
 .curved {
   clip-path: circle(250vh at 50% -120vh);
 }
+
+.curved2 {
+  clip-path: circle(330vh at 50% -140vh);
+}
