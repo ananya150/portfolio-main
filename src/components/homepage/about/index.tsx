@@ -32,7 +32,7 @@ const About = () => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: false }}
-                        transition={{duration:2}}
+                        transition={{duration:1, delay:0.3}}
                         
                     >
                         <span className='font-satoshi text-[23px] xl:text-[39px] sm:text-[25px] font-[400] xl:font-[500]'>

@@ -4,6 +4,7 @@ import { Sidebar } from '@/components/common/sidebar/Sidebar'
 import Curtain from '@/components/common/curtain/Curtain'
 import Tagline from '@/components/about/tagline/Tagline'
 import Info from '@/components/about/about/Info'
+import Contact from '@/components/homepage/contact'
 
 const About = () => {
   return (
@@ -13,7 +14,10 @@ const About = () => {
         <div className='bg-[#FFFEFE]'>
           <Header />
           <Tagline />
-          <Info />
+          <div className='bg-[#1c1d20]'>
+            <Info />
+            <Contact />
+          </div>
         </div>
     </div>
   )

@@ -84,3 +84,14 @@ html {
 .about-tagline {
   font-size: calc(0.5em + 5vw);
 }
+
+.graadient-back {
+  background-image: linear-gradient(
+    to bottom,
+    #fffefe,
+    #faf9f8,
+    #f5f4f3,
+    #eff0ee,
+    #e9ebea
+  );
+}
