@@ -77,7 +77,7 @@ export const Sidebar = () => {
 
   return (
     <motion.div className={`${isVisible ? '' : 'hidden'}`}>
-      <motion.nav className={`fixed top-0 right-0 bottom-0 w-[100%] md:w-[650px] z-40`}
+      <motion.nav className={`fixed top-0 right-0 bottom-0 w-[100%] md:w-[650px] ${open? 'z-40' : 'z-10' }`}
         initial={false}
         animate={open ? "open" : "closed"}
         custom={height}

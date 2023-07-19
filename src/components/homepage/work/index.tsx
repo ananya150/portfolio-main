@@ -40,14 +40,14 @@ export default function Work() {
     <div className='bg-[#1c1d20]'>
         <section className='md:h-[140vh] h-[200vh] custom-clip-path2 lg:custom-clip-path1 bg-[#FFFEFE]'>
             <div className='lg:block hidden mx-[9vw]'>
-                <div className='ml-36 text-sm font-satoshi text-gray-500' >
+                <div className='ml-36 text-sm font-satoshi text-gray-500' > 
                     RECENT WORK
                 </div>
                 <hr className="h-px mt-12 bg-gray-300 border-0"/>
                 {/* <ul> */}
                     {items.map((item,index) => (
                         <li 
-                            className=" z-10 py-[55px] border-b border-gray-300"
+                            className="  py-[55px] border-b border-gray-300"
                             key={index}
                             onMouseOver={() => {
                                 setButtonVisible(true);
