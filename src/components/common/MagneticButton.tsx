@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-const MagneticButton = ({children , className}: any) => {
+const MagneticButton = ({children , className, onClick}: any) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseEnter = (e: any) => {
@@ -26,6 +26,7 @@ const MagneticButton = ({children , className}: any) => {
 
   return (
     <button 
+      onClick={onClick}
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
