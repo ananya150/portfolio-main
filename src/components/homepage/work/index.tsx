@@ -115,7 +115,7 @@ export default function Work() {
             </div>
 
             <div className='lg:hidden mx-[9vw]'>
-                <div className='ml-36 text-sm font-satoshi text-gray-500' >
+                <div className='ml-10 text-sm font-satoshi text-gray-500' >
                     RECENT WORK
                 </div>
                 <hr className="h-px mt-12 bg-gray-300 border-0"/>
