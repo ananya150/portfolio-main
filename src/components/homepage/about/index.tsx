@@ -8,6 +8,7 @@ import {
     useTransform,
     MotionValue
   } from "framer-motion";
+import { useRouter } from 'next/navigation';
 
   function useParallax(value: MotionValue<number>, distanceDown: number, distanceUp: number) {
     return useTransform(value, [0, 1], [distanceDown, -distanceUp]);
@@ -19,6 +20,11 @@ const About = () => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ target: ref });
     const y = useParallax(scrollYProgress, 300,120);
+    const router = useRouter()
+
+    const handleNavigatoin = () => {
+        router.push('/about')
+      }
   
 
   return (
@@ -32,7 +38,7 @@ const About = () => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: false }}
-                        transition={{duration:1, delay:0.3}}
+                        transition={{duration:1, delay:0.5}}
                         
                     >
                         <span className='font-satoshi text-[23px] xl:text-[39px] sm:text-[25px] font-[400] xl:font-[500]'>
@@ -58,7 +64,7 @@ const About = () => {
                 <div className='sm:hidden w-1/2'></div>
             </div>
             <motion.div style={{ y }} className='flex bottom-[20vh] absolute right-[10vw] sm:right-[23vw] justify-center z-20'>
-                <MagneticButton className="bg-[#1c1d20] h-36 w-36 sm:h-48 sm:w-48 ">
+                <MagneticButton onClick={handleNavigatoin} className="bg-[#1c1d20] h-36 w-36 sm:h-48 sm:w-48 ">
                     <span className='font-satoshi text-[18px] font-[400]'>About me</span>
                 </MagneticButton>
             </motion.div>

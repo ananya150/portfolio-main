@@ -6,6 +6,7 @@ import {
     useSpring,
     MotionValue
   } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 function useParallax(value: MotionValue<number>, distanceDown: number, distanceUp: number) {
     return useTransform(value, [0, 1], [-distanceUp, distanceDown]);
@@ -21,6 +22,11 @@ const Contact = () => {
     const y1 = useParallax(scrollYProgress, 10,450);
     const y2 = useParallax(scrollYProgress, 0,300);
     const x = useParallaxX(scrollYProgress, 400,50);
+    const router = useRouter()
+
+    const handleNavigatoin = () => {
+      router.push('/contact')
+    }
 
   return (
     <section className="bg-[#1c1d20] h-[90vh] relative">
@@ -29,7 +35,7 @@ const Contact = () => {
                 <motion.p  style={{ y:y1 }}className="font-satoshi text-[100px] font-medium tracking-wide text-white">Let&apos;s get in <br/> touch  </motion.p>
                 <hr className="h-px mt-[8vh] bg-gray-600 border-0"/>
             </div>
-          <motion.div style={{x:x}} className="absolute bottom-[41vh] right-[350px] z-20"><MagneticButton className="bg-[#445DE9] h-48 w-48 z-10 ">Get in touch</MagneticButton></motion.div>
+          <motion.div style={{x:x}} className="absolute bottom-[41vh] right-[350px] z-20"><MagneticButton onClick={handleNavigatoin} className="bg-[#445DE9] h-48 w-48 z-10 ">Get in touch</MagneticButton></motion.div>
           <motion.div style={{ y:y2 }} className="flex mt-20 space-x-4 mx-[15vw]">
             <MagneticButton className="hover:bg-[#445DE9] hover:border-[#445DE9] px-10 py-5 text-[14px] font-normal border border-gray-400">akblockchain15@gmail.com</MagneticButton>
             <MagneticButton className="hover:bg-[#445DE9] hover:border-[#445DE9] px-10 py-5 text-[14px] font-normal border border-gray-400">+91 9024180290</MagneticButton>

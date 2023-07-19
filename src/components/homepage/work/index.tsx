@@ -4,12 +4,18 @@ import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
 import Link from 'next/link';
 import MagneticButton from '@/components/common/MagneticButton';
+import { useRouter } from 'next/navigation'
 
 export default function Work() {
 
   const [imageSrc, setImageSrc] = useState("");
   const [buttinVisible, setButtonVisible] = useState(false);
   const [coords, setCoords] = useState({ x: 0, y: 0 });
+  const router = useRouter()
+
+  const handleNavigatoin = () => {
+    router.push('/work')
+  }
 
   const targetRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
@@ -156,7 +162,7 @@ export default function Work() {
 
 
             <div className='flex justify-center w-full mt-24'>
-                <MagneticButton className="bg-[#1c1d20] h-[70px] w-[160px]"><span className='font-satoshi text-[17px] font-[400]'>More work</span></MagneticButton>
+                <MagneticButton className="bg-[#1c1d20] h-[70px] w-[160px]"><span className='font-satoshi text-[17px] font-[400]' onClick={handleNavigatoin}>More work</span></MagneticButton>
             </div>
         </section>
     </div>
