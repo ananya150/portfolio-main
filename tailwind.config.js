@@ -36,6 +36,9 @@ module.exports = {
           ".custom-clip-path3": {
             clipPath: "circle(350vh at 50% -105vh)",
           },
+          ".custom-clip-path4": {
+            clipPath: "circle(420vh at 50% -105vh)",
+          },
           ".about-tagline1": {
             fontSize: "calc(0.5em + 5vw)",
           }

@@ -4,7 +4,7 @@ import ProductsList from './ProductsList'
 
 const Products = () => {
   return (
-    <div className='graadient-back h-[160vh] custom-clip-path1'>
+    <div className='graadient-back md:h-[160vh] h-[350vh] custom-clip-path4 md:custom-clip-path1'>
         <div className='mt-[6vh] mx-[17vw] flex justify-center'>
             <span className='font-satoshi font-[400] text-[15px] md:text-[22px] '>Here are some of the things I have built and am passionate about</span>
         </div>

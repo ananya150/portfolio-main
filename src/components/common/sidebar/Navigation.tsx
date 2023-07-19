@@ -21,7 +21,7 @@ export const Navigation = ({open}: any) => (
         animate={{ opacity: 1 }}
         transition={{duration: 0.5, delay:0.3}}
       >
-        <div className="h-[100vh] w-[100vw] z-50 ">
+        <div className={`h-[100vh] w-[100vw] ${open ? 'z-50': 'z-10'} `}>
           <div className="my-[14vh] mx-[6vw] h-full ">
             <div className='text-xs ml-[2vw] font-satoshi text-gray-400' >
               NAVIGATION
