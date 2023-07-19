@@ -1,6 +1,9 @@
 import './globals.css'
-import Common from '@/components/common/Common';
 import { ThemeContextProvider  } from '@/context/themeContext';
+import Curtain from '@/components/common/curtain/Curtain';
+import { headers } from "next/headers";
+import { AnimatePresence } from 'framer-motion';
+import Wrapper from '@/components/common/Wrapper';
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,6 +15,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  const headersList = headers();
+  const activePath = headersList.get("x-invoke-path");
+
   return (
     <html lang="en">
       <head>
@@ -21,8 +28,9 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeContextProvider>
-            <Common />
+          <Wrapper>
             {children}
+          </Wrapper>
         </ThemeContextProvider>
       </body>
     </html>

@@ -43,7 +43,7 @@ const sidebarVariants = {
   },
 };
 
-export const Sidebar = () => {
+export const Sidebar = ({scrollThreshold}: {scrollThreshold?: number}) => {
   const [open, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
@@ -61,7 +61,7 @@ export const Sidebar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = window.innerHeight; // Adjust this value as needed
+      const threshold = scrollThreshold || window.innerHeight; // Adjust this value as needed
 
       setIsVisible(scrollPosition > threshold);
       if(scrollPosition < threshold) setOpen(false);

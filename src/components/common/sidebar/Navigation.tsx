@@ -28,19 +28,19 @@ export const Navigation = ({open}: any) => (
             </div>
             <hr className="h-px ml-[2vw] mt-[3vh] mr-[68vw] bg-gray-600 border-0"/>
             <div className="flex flex-col space-y-3 mt-16">
-              <Link href='#' className="flex space-x-6 items-center group">
+              <Link href='/' className="flex space-x-6 items-center group">
                 <div className='w-[10px] h-[10px] rounded-full bg-white opacity-0 group-hover:opacity-100'></div>
                 <span className="text-[57px] font-satoshi font-[500] text-[#FFFEFE]">Home</span>
               </Link>
-              <Link href='#' className="flex space-x-6 items-center group">
+              <Link href='/work' className="flex space-x-6 items-center group">
                 <div className='w-[10px] h-[10px] rounded-full bg-white opacity-0 group-hover:opacity-100'></div>
                 <span className="text-[57px] font-satoshi font-[500] text-[#FFFEFE]">Work</span>
               </Link>
-              <Link href='#' className="flex space-x-6 items-center group">
+              <Link href='/about' className="flex space-x-6 items-center group">
                 <div className='w-[10px] h-[10px] rounded-full bg-white opacity-0 group-hover:opacity-100'></div>
                 <span className="text-[57px] font-satoshi font-[500] text-[#FFFEFE]">About</span>
               </Link>
-              <Link href='#' className="flex space-x-6 items-center group">
+              <Link href='/contact' className="flex space-x-6 items-center group">
                 <div className='w-[10px] h-[10px] rounded-full bg-white opacity-0 group-hover:opacity-100'></div>
                 <span className="text-[57px] font-satoshi font-[500] text-[#FFFEFE]">Contact</span>
               </Link>

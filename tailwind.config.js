@@ -36,6 +36,9 @@ module.exports = {
           ".custom-clip-path3": {
             clipPath: "circle(330vh at 50% -155vh)",
           },
+          ".about-tagline1": {
+            fontSize: "calc(0.5em + 5vw)",
+          }
         },
         {
           variants: ["responsive"],

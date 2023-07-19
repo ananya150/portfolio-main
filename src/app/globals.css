@@ -80,3 +80,7 @@ html {
 .curved2 {
   clip-path: circle(330vh at 50% -140vh);
 }
+
+.about-tagline {
+  font-size: calc(0.5em + 5vw);
+}
