@@ -9,7 +9,7 @@ import Footer from '@/components/common/footer/Footer'
 const ContactMe = () => {
   return (
     <div className='overflow-x-clip relative'>
-        <Sidebar />
+        <Sidebar scrollThreshold={150} />
         <div className='dark'>
           <div className='dark:bg-[#1c1d20] overflow-x-clip' >
             <Curtain />
