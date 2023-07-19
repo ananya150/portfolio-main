@@ -1,9 +1,25 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import './globe.css';
+import { motion , useScroll , useTransform} from "framer-motion";
+import {
+    useSpring,
+    MotionValue
+  } from "framer-motion";
+
+
+function useParallaxX(value: MotionValue<number>, distanceLeft: number, distanceRight: number) {
+  return useTransform(value, [1, 0], [-distanceLeft, distanceRight]);
+}
+
 
 const GlobeSpinner = ({className}: any) => {
+
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
+  const x = useParallaxX(scrollYProgress, 40,40);
+
   return (
-    <div className={`w-40 h-40 md:w-48 md:h-48 flex flex-col bg-[#445DE9] justify-end rounded-full ${className}`}>
+    <motion.div style={{x}} className={`w-40 h-40 md:w-48 md:h-48 flex flex-col bg-[#445DE9] justify-end rounded-full ${className} hover:bg-[#fe4544] duration-[2500ms]`}>
       <div className="notice mb-5 md:-translate-y-6">
         <span className="world">
           <span className="images">
@@ -25,7 +41,7 @@ const GlobeSpinner = ({className}: any) => {
           </span>
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
