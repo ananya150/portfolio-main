@@ -29,4 +29,18 @@ const Image1 = ({imgUrl}: any) => {
   )
 }
 
+
+export const Image2 = ({imgUrl}: any) => {
+
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref });
+  const y1 = useParallax(scrollYProgress, 200 ,500);
+
+  return (
+    <div className='md:mx-[10vw] mt-[28vh] h-[60vw] relative'>
+        <img src={imgUrl} alt='img' className='md:w-[80vw] md:h-[40vw] w-[100vw] -z-10 ' />
+    </div>
+  )
+}
+
 export default Image1
