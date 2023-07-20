@@ -15,7 +15,7 @@ const Heading = ({name, sector}: any) => {
 
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
-  const y1 = useParallax(scrollYProgress, 200 ,10);
+  const y1 = useParallax(scrollYProgress, 200 ,200);
   const y2 = useParallax(scrollYProgress, 40 ,100);
 
   return (
@@ -30,7 +30,7 @@ const Heading = ({name, sector}: any) => {
             <div className='w-full mt-9'>
               <span className='font-[400] font-satoshi text-[14px] text-gray-500'>ROLE/SERVICES</span>
               <hr className="h-px mt-[3vh] mb-[4vh] bg-gray-300 w-full border-0"/>
-              <span className='font-satoshitext-[18px]'>
+              <span className='font-satoshi text-[18px]'>
                 Design & Development
               </span>
             </div>
@@ -38,7 +38,7 @@ const Heading = ({name, sector}: any) => {
             <div className='w-full mt-9'>
               <span className='font-[400] font-satoshi text-[14px] text-gray-500'>SECTOR</span>
               <hr className="h-px mt-[3vh] mb-[4vh] bg-gray-300 w-full border-0"/>
-              <span className='font-satoshitext-[18px]'>
+              <span className='font-satoshi text-[18px]'>
                 {sector}
               </span>
             </div>
@@ -46,7 +46,7 @@ const Heading = ({name, sector}: any) => {
             <div className='w-full mt-9'>
               <span className='font-[400] font-satoshi text-[14px] text-gray-500'>LOCATION & YEAR</span>
               <hr className="h-px mt-[3vh] mb-[4vh] bg-gray-300 w-full border-0"/>
-              <span className='font-satoshitext-[18px]'>
+              <span className='font-satoshi text-[18px]'>
                 India © 2033 
               </span>
             </div>

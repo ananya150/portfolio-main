@@ -8,6 +8,7 @@ import Contact from '@/components/homepage/contact';
 import MacImage from '@/components/work/individual-product/image/MacImage';
 import Heading from '@/components/work/individual-product/Heading';
 import Image1 from '@/components/work/individual-product/Image1';
+import AboutProduct from '@/components/work/individual-product/AboutProduct';
 
 const Flexxyz = () => {
   return (
@@ -18,9 +19,14 @@ const Flexxyz = () => {
           <Header />
           <Heading name="Flex.xyz" sector="Cryptocurrency and payments" />
           <Image1 imgUrl='/flex.png' />
-          <div className='bg-[#DCDCDD] py-[15vh]'>
+          <div className='bg-[#DCDCDD] bg-fixed'>
             <MacImage imageUrl='/flex2.png' />
           </div>
+          <div className='bg-[#1c1d20]'>
+            <AboutProduct />
+            <Contact />
+          </div>
+          
         </div>
     </div>
   )
