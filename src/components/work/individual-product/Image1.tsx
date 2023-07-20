@@ -18,7 +18,7 @@ const Image1 = ({imgUrl}: any) => {
   const y1 = useParallax(scrollYProgress, 200 ,500);
 
   return (
-    <div className='md:mx-[10vw] mt-[24vh] h-[60vw] relative'>
+    <div className='md:mx-[10vw] mt-[28vh] h-[60vw] relative'>
         <img src={imgUrl} alt='img' className='md:w-[80vw] md:h-[44vw] w-[100vw] -z-10 ' />
         <div className='flex flex-col justify-center w-full h-3/5 z-20 absolute top-0 bg-transparent'>
           <motion.div style={{y:y1}} className='flex justify-center text-white '>

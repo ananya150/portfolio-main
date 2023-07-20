@@ -64,7 +64,7 @@ const Heading = ({name, sector}: any) => {
         <motion.div                     
           className='mt-[12vh] mx-[9vw] md:hidden'>
 
-            <div className='mt-[6vh] md:flex md:space-x-[7vw] space-y-16'>
+            <div className='mt-[8vh] md:flex md:space-x-[7vw] space-y-16'>
 
                 <div className='w-full'>
                   <span className='font-[400] font-satoshi text-[14px] text-gray-500'>ROLE/SERVICES</span>
@@ -90,8 +90,8 @@ const Heading = ({name, sector}: any) => {
                   </span>     
                 </div>
 
-                <motion.div style={{y:y2}}  className='flex bottom-[-25vh] absolute right-[30vw] sm:right-[18vw] justify-center z-20'>
-                    <MagneticButton className="bg-[#445DE9] h-36 w-36 ">
+                <motion.div  className='flex bottom-[-15vh] absolute right-[35vw] sm:right-[18vw] justify-center z-20'>
+                    <MagneticButton className="bg-[#445DE9] h-28 w-28 ">
                         <span className='font-satoshi text-[18px] font-[400]'>Live site ➚</span>
                     </MagneticButton>
                 </motion.div>

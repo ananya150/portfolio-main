@@ -36,7 +36,12 @@ const AboutProduct = () => {
                 <span className='font-satoshi text-[55px] font-[500]'>Features</span>
             </div>
 
-            <div className='mt-[6vh] md:flex md:space-x-[7vw] space-y-10'>
+            <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: false }}
+                transition={{duration:1, delay:0.3}}
+                className='mt-[6vh] md:flex md:space-x-[7vw] space-y-10'>
 
                 
                 <div className='w-full mt-9'>
@@ -73,7 +78,7 @@ const AboutProduct = () => {
                 </div>
 
 
-            </div>
+            </motion.div>
 
             <motion.div style={{y:y2}}  className='flex  justify-center z-20 mt-10'>
                 <MagneticButton className="bg-[#445DE9] h-44 w-44 ">
@@ -84,15 +89,26 @@ const AboutProduct = () => {
         </motion.div>
 
         <motion.div className='mt-[19vh] mx-[9vw] md:hidden'>
-            <div className=''>
-                <span className='font-satoshi text-[45px] font-[500]'>I can help you with ...</span>
+
+            <div className='flex flex-col space-y-16'>
+                    <span className='font-satoshi text-[45px] font-[500]'>About</span>
+                    <span className='font-satoshi text-[17px]'>
+                            I build scalable websites from scratch that fit seamlessly with design. My focus is on micro animations, transitions and interaction. For content management I use Kirby CMS.
+                            I build scalable websites from scratch that fit seamlessly with design. My focus is on micro animations, transitions and interaction. For content management I use Kirby CMS.
+                    </span>
             </div>
+
+
+            <div className='mt-[20vh]'>
+                <span className='font-satoshi text-[55px] font-[500]'>Features</span>
+            </div>
+
             <div className='mt-[6vh] md:flex md:space-x-[7vw] space-y-24'>
 
                 <motion.div className='w-full'
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     transition={{duration:1, delay:0.3}}
                 >
                     <span className='font-[400] font-satoshi text-[16px] text-gray-500'>01</span>
@@ -108,7 +124,7 @@ const AboutProduct = () => {
                 <motion.div className='w-full'
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     transition={{duration:1, delay:0.3}}
                 >
                     <span className='font-[400] font-satoshi text-[16px] text-gray-500'>01</span>
@@ -124,7 +140,7 @@ const AboutProduct = () => {
                 <motion.div className='w-full'
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                     transition={{duration:1, delay:0.3}}
                 >
                     <span className='font-[400] font-satoshi text-[16px] text-gray-500'>01</span>
@@ -136,8 +152,15 @@ const AboutProduct = () => {
                         </span>
                     </div>
                 </motion.div>
-
             </div>
+
+            <motion.div style={{y:y2}}  className='flex justify-center z-20 '>
+                <MagneticButton className="bg-[#445DE9] h-28 w-28 ">
+                    <span className='font-satoshi text-[18px] font-[400]'> ↖ All products </span>
+                </MagneticButton>
+            </motion.div>
+
+
         </motion.div>
 
     </div>
