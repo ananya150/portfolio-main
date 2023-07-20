@@ -18,7 +18,9 @@ const Flexxyz = () => {
           <Header />
           <Heading name="Flex.xyz" sector="Cryptocurrency and payments" />
           <Image1 imgUrl='/flex.png' />
-          
+          <div className='bg-[#DCDCDD] py-[15vh]'>
+            <MacImage imageUrl='/flex2.png' />
+          </div>
         </div>
     </div>
   )

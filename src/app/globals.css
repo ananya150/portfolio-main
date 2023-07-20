@@ -97,19 +97,5 @@ html {
 }
 
 .mac-container {
-  background-image: url("/mac.png"); /* Replace 'mac-image-url.png' with the URL of the Mac image */
-  background-size: cover;
-  width: 62vw; /* Adjust the width and height to match the dimensions of the Mac image */
-  height: 48vw;
-  border-radius: 20px; /* Add border-radius to match the rounded corners of the Mac screen */
-  position: relative;
-}
-
-.mac-container img {
-  position: absolute;
-  top: 1.5vw; /* Adjust the top and left values to position your image within the Mac screen */
-  left: 1vw;
-  width: 59.5vw; /* Adjust the width and height to fit your image within the Mac screen */
-  height: 35vw;
-  overflow: hidden;
+  background-image: url("/macbook2.png"); /* Replace 'mac-image-url.png' with the URL of the Mac image */
 }
