@@ -1,11 +1,12 @@
 'use client';
+import { useRouter } from 'next/navigation';
 import React, {useState} from 'react'
 
 const items = [
     {
       image: '/img1.png',
       name: 'Flex.xyz',
-      url: '/zk-age-verifier'
+      url: '/work/flexxyz'
     },
     {
       image: '/img2.png',
@@ -20,7 +21,7 @@ const items = [
     {
       image: '/img2.png',
       name: 'Zk-Age',
-      url: 'eth-chat-app'
+      url: '/work/zkage'
     },
   ];
 
@@ -30,6 +31,7 @@ const ProductsList = () => {
     const [imageSrc, setImageSrc] = useState("");
     const [buttinVisible, setButtonVisible] = useState(false);
     const [coords, setCoords] = useState({ x: 0, y: 0 });
+    const router = useRouter();
 
   return (
     <div>
@@ -37,6 +39,7 @@ const ProductsList = () => {
             {items.map((item,index) => (
                 <li 
                     className="  py-[32px] border-b border-gray-300"
+                    onClick={() => {router.push(item.url)}}
                     key={index}
                     onMouseOver={() => {
                         setButtonVisible(true);
