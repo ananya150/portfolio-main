@@ -25,19 +25,19 @@ export default function Work() {
 
   const items = [
     {
-      image: '/img1.png',
-      name: 'Flex.xyz',
-      url: '/zk-age-verifier'
+      image: '/zkback.png',
+      name: 'Zk-age',
+      url: '/work/zkage'
     },
     {
       image: '/img2.png',
-      name: '1Wallet',
-      url: '/erc4337-wallet'
+      name: 'Flex.xyz',
+      url: '/work/flexxyz'
     },
     {
-      image: '/img1.png',
-      name: 'Eth-Chatter',
-      url: 'eth-chat-app'
+      image: '/1walletback.png',
+      name: '1Wallet',
+      url: '/work/1wallet'
     },
   ];
 
@@ -59,6 +59,7 @@ export default function Work() {
                                 setButtonVisible(true);
                                 setImageSrc(item.image);
                             }}
+                            onClick={() => {router.push(item.url)}}
                             onMouseMove={(e) => {
                                 setCoords({ 
                                     x: e.clientX, 
