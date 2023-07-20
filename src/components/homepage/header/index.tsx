@@ -19,7 +19,7 @@ const Header = () => {
         <div className='flex mx-auto md:mx-0 justify-center space-x-12 mr-8 pt-6'>
           <div className='group'>
             <Link href='/work'><span className='dark:text-white text-black font-satoshi text-[18px] md:text-[19px]'>Work</span></Link>
-            <div className={`w-[5px] h-[5px] rounded-full dark:bg-white bg-black mx-auto mt-1 ${activePath === '/work' ? 'opacity-100': 'opacity-0'} group-hover:opacity-100`}></div>
+            <div className={`w-[5px] h-[5px] rounded-full dark:bg-white bg-black mx-auto mt-1 ${activePath?.slice(0,5) === '/work' ? 'opacity-100': 'opacity-0'} group-hover:opacity-100`}></div>
           </div>
           <div className='group'>
             <Link href='/about'><span className='dark:text-white text-black font-satoshi text-[18px] md:text-[19px]'>About</span></Link>
