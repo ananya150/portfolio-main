@@ -33,7 +33,7 @@ const ContactForm = () => {
                     <span className='md:text-[80px] text-[40px] font-[500] font-satoshi'>Let&apos;s start a</span><br/>
                     <span className='md:text-[80px] text-[40px] font-[500] font-satoshi'>project together</span>
                     <div className='mt-[19vh] border-t border-gray-600 '>
-                        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xknlgrwz" method="post">
+                        <form id="fs-frm" name="simple-contact-form" acceptCharset="utf-8" action="https://formspree.io/f/xknlgrwz" method="post">
 
                             <div className='pt-12 pb-6 flex items-center space-x-16 border-b border-gray-600'>
                                 <span className='font-[400] font-satoshi text-[16px] text-gray-400'>01</span>
@@ -74,7 +74,7 @@ const ContactForm = () => {
                             <div>
                                 <span className='text-gray-500 font-satoshi font-[400] text-[15px]'>Contact Details</span>
                                 <br/><br/>
-                                <span className='text-white font-satoshi font-[400] text-[20px]'>akblockchain15@gmail</span>
+                                <span className='text-white font-satoshi font-[400] text-[20px]'>akblockchain15@gmail.com</span>
                                 <br/><br/>
                                 <span className='text-white font-satoshi font-[400] text-[20px]'>+91 9024180290</span>
                             </div>
@@ -90,7 +90,7 @@ const ContactForm = () => {
                     <div>
                         <span className='text-gray-500 font-satoshi font-[400] text-[15px]'>Contact Details</span>
                         <br/><br/>
-                        <span className='text-white font-satoshi font-[400] text-[20px]'>akblockchain15@gmail</span>
+                        <span className='text-white font-satoshi font-[400] text-[20px]'>akblockchain15@gmail.com</span>
                         <br/><br/>
                         <span className='text-white font-satoshi font-[400] text-[20px]'>+91 9024180290</span>
                     </div>

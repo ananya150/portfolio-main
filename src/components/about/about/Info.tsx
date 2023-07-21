@@ -50,10 +50,10 @@ const Info = () => {
             <div className='w-full mt-9'>
                     <span className='font-[400] font-satoshi text-[16px] text-gray-500'>01</span>
                     <hr className="h-px mt-[3vh] mb-[4vh] bg-gray-300 w-full border-0"/>
-                    <span className='font-satoshi font-[500] text-[39px]'>Development</span>
+                    <span className='font-satoshi font-[500] text-[39px]'>Design</span>
                     <div className='mt-[4vh] '>
                         <span className='font-satoshi text-[18px]'>
-                            I build scalable websites from scratch that fit seamlessly with design. My focus is on micro animations, transitions and interaction. For content management I use Kirby CMS.
+                            With a solid track record in designing products and user interfaces, I deliver strong and user-friendly digital designs. Solid user experience is the foundation of any succesful company.
                         </span>
                     </div>
                 </div>
@@ -61,10 +61,10 @@ const Info = () => {
                 <div className='w-full'>
                     <span className='font-[400] font-satoshi text-[16px] text-gray-500'>01</span>
                     <hr className="h-px mt-[3vh] mb-[4vh] bg-gray-300 w-full border-0"/>
-                    <span className='font-satoshi font-[500] text-[39px]'>Development</span>
-                    <div className='mt-[4vh] '>
+                    <span className='font-satoshi font-[500] text-[39px]'>Blockchain</span>
+                    <div className='mt-[4vh]'>
                         <span className='font-satoshi text-[18px]'>
-                            I build scalable websites from scratch that fit seamlessly with design. My focus is on micro animations, transitions and interaction. For content management I use Kirby CMS.
+                            I can write and deploy smart contracts for you on the blockchain that fit seamlessly with the need. Weather it be a simple work like data storage or complex defi projects, I can do it all.
                         </span>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Info = () => {
                     <span className='font-satoshi font-[500] text-[39px]'>The full package</span>
                     <div className='mt-[4vh] '>
                         <span className='font-satoshi text-[18px]'>
-                            A complete website from concept to implementation, that&apos;s what makes me stand out. My great sense for design and my development skills enable me to create kick-ass projects.
+                            I can create a beautiful website that connects with blockchain. My great sense for design and my fullstack development skills enable me to create kick-ass projects.
                         </span>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ const Info = () => {
                     <span className='font-satoshi font-[500] text-[39px]'>Design</span>
                     <div className='mt-[4vh] '>
                         <span className='font-satoshi text-[16px]'>
-                            With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs. Solid company branding is the foundation of any succesful website.
+                            With a solid track record in designing products and user interfaces, I deliver strong and user-friendly digital designs. Solid user experience is the foundation of any succesful company.
                         </span>
                     </div>
                 </motion.div>
@@ -113,10 +113,10 @@ const Info = () => {
                 >
                     <span className='font-[400] font-satoshi text-[16px] text-gray-500'>01</span>
                     <hr className="h-px mt-[3vh] mb-[4vh] bg-gray-300 w-full border-0"/>
-                    <span className='font-satoshi font-[500] text-[39px]'>Design</span>
+                    <span className='font-satoshi font-[500] text-[39px]'>Blockchain</span>
                     <div className='mt-[4vh] '>
                         <span className='font-satoshi text-[16px]'>
-                            With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs. Solid company branding is the foundation of any succesful website.
+                            I can write and deploy smart contracts for you on the blockchain that fit seamlessly with the need. Weather it be a simple work like data storage or complex defi projects, I can do it all.
                         </span>
                     </div>
                 </motion.div>
@@ -129,10 +129,10 @@ const Info = () => {
                 >
                     <span className='font-[400] font-satoshi text-[16px] text-gray-500'>01</span>
                     <hr className="h-px mt-[3vh] mb-[4vh] bg-gray-300 w-full border-0"/>
-                    <span className='font-satoshi font-[500] text-[39px]'>Design</span>
+                    <span className='font-satoshi font-[500] text-[39px]'>The full package</span>
                     <div className='mt-[4vh] '>
                         <span className='font-satoshi text-[16px]'>
-                            With a solid track record in designing websites and apps, I deliver strong and user-friendly digital designs. Solid company branding is the foundation of any succesful website.
+                        I can create a beautiful website that connects with blockchain. My great sense for design and my fullstack development skills enable me to create kick-ass projects.
                         </span>
                     </div>
                 </motion.div>

@@ -7,6 +7,7 @@ import {
     MotionValue
   } from "framer-motion";
 import { useRouter } from "next/navigation";
+import Footer from "@/components/common/footer/Footer";
 
 function useParallax(value: MotionValue<number>, distanceDown: number, distanceUp: number) {
     return useTransform(value, [0, 1], [-distanceUp, distanceDown]);
@@ -54,7 +55,9 @@ const Contact = () => {
           </motion.div>
         </div>
 
-        <footer className="absolute bottom-0 py-[3vh] text-base flex md:justify-between justify-center md:px-20  w-full">
+        <Footer />
+
+        {/* <footer className="absolute bottom-0 py-[3vh] text-base flex md:justify-between justify-center md:px-20  w-full">
             <div className="flex space-x-8 hidden md:block">
                 <span className="text-white ">2023 © Edition</span>
                 <span className="text-white ">Ananya Khandelwal</span>
@@ -65,7 +68,7 @@ const Contact = () => {
                 <span className="text-white">Linkedin</span>
                 <span className="text-white">Github</span>
             </div>
-        </footer>
+        </footer> */}
     </section>
   );
 };

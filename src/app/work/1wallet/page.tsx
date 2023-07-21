@@ -17,7 +17,7 @@ const OneWallet = () => {
         <Curtain />
         <div className='bg-[#FFFEFE] h-[120vh]'>
           <Header />
-          <Heading name="1 Wallet" sector="Cryptocurrency and wallets" />
+          <Heading name="1 Wallet" sector="Cryptocurrency and wallets" link="https://1wallet.vercel.app/" />
           <Image2 imgUrl='/1wallet.png' />
           <div className='bg-[#DCDCDD] bg-fixed'>
             <MacImage imageUrl='/1wallet2.png' />

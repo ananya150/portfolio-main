@@ -17,7 +17,7 @@ const ZkAge = () => {
         <Curtain />
         <div className='bg-[#FFFEFE] h-[120vh]'>
           <Header />
-          <Heading name="Zk Age" sector="Zero knowledge and blockchain" />
+          <Heading name="Zk Age" sector="Zero knowledge and blockchain" link="https://zk-age-verifier.vercel.app/" />
           <Image1 imgUrl='/zkage2.png' />
           <div className='bg-[#DCDCDD] bg-fixed'>
             <MacImage imageUrl='/zkage.png' />

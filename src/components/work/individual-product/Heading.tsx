@@ -6,12 +6,13 @@ import {
     MotionValue
   } from "framer-motion";
 import MagneticButton from '@/components/common/MagneticButton';
+import Link from 'next/link';
 
   function useParallax(value: MotionValue<number>, distanceDown: number, distanceUp: number) {
     return useTransform(value, [1, 0], [-distanceUp, distanceDown]);
   } 
 
-const Heading = ({name, sector}: any) => {
+const Heading = ({name, sector, link}: any) => {
 
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
@@ -53,9 +54,11 @@ const Heading = ({name, sector}: any) => {
             </div>
 
             <motion.div style={{ y:y1 }} className='flex bottom-[20vh] absolute right-[10vw] sm:right-[18vw] justify-center z-20'>
+              <Link href={link} target="_blank">
                 <MagneticButton className="bg-[#445DE9] h-36 w-36 sm:h-48 sm:w-48 ">
                     <span className='font-satoshi text-[18px] font-[400]'>Live site ➚</span>
                 </MagneticButton>
+              </Link>
             </motion.div>
 
 
@@ -91,9 +94,11 @@ const Heading = ({name, sector}: any) => {
                 </div>
 
                 <motion.div  className='flex bottom-[-15vh] absolute right-[35vw] sm:right-[18vw] justify-center z-20'>
+                  <Link href={link} target="_blank">
                     <MagneticButton className="bg-[#445DE9] h-28 w-28 ">
                         <span className='font-satoshi text-[18px] font-[400]'>Live site ➚</span>
                     </MagneticButton>
+                  </Link>
                 </motion.div>
 
             </div>

@@ -4,22 +4,22 @@ import React, {useState} from 'react'
 
 const items = [
     {
-      image: '/img1.png',
+      image: '/img2.png',
       name: 'Flex.xyz',
       url: '/work/flexxyz'
     },
     {
-      image: '/img2.png',
+      image: '/1walletback.png',
       name: '1Wallet',
-      url: '/erc4337-wallet'
-    },
-    {
-      image: '/img1.png',
-      name: 'Eth-Chatter',
-      url: 'eth-chat-app'
+      url: '/work/1wallet'
     },
     {
       image: '/img2.png',
+      name: 'Eth-Chatter',
+      url: '/work'
+    },
+    {
+      image: '/zkback.png',
       name: 'Zk-Age',
       url: '/work/zkage'
     },

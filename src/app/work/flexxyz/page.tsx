@@ -17,7 +17,7 @@ const Flexxyz = () => {
         <Curtain />
         <div className='bg-[#FFFEFE] h-[120vh]'>
           <Header />
-          <Heading name="Flex.xyz" sector="Cryptocurrency and payments" />
+          <Heading name="Flex.xyz" sector="Cryptocurrency and payments" link="https://flexxyz.vercel.app/" />
           <Image1 imgUrl='/flex.png' />
           <div className='bg-[#DCDCDD] bg-fixed'>
             <MacImage imageUrl='/flex2.png' />

@@ -83,8 +83,10 @@ export const Sidebar = ({scrollThreshold}: {scrollThreshold?: number}) => {
         custom={height}
         ref={containerRef}
       >
-        <motion.div className="absolute top-0 right-0 bottom-0 w-[100%] md:w-[650px] dark:bg-[#fff] bg-[#1c1d20]" variants={sidebar} />
-          <Navigation open={open} />
+        <motion.div className={`absolute top-0 right-0 bottom-0 w-[100%] md:w-[650px] dark:bg-[#fff] bg-[#1c1d20] `} variants={sidebar} />
+          <div className={`${open ? 'z-50' : '-z-10'}`}>
+            <Navigation open={open} />
+          </div>
           <MenuToggle toggle={handleButtonCLick} />
         </motion.nav>
         <motion.div
