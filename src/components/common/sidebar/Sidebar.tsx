@@ -76,22 +76,30 @@ export const Sidebar = ({scrollThreshold}: {scrollThreshold?: number}) => {
   }, []);
 
   return (
-    <motion.div className={`${isVisible ? '' : 'hidden'}`}>
-      <motion.nav className={`fixed top-0 right-0 bottom-0 w-[100%] md:w-[650px] ${open? 'z-40' : 'z-10' }`}
+    <div className="" >
+      <div className={`fixed w-[90px] h-[90px] z-10 rounded-full bg-[#1c1d20] top-[36px] right-[36px] ${isVisible ? '': 'hidden'}`}>
+
+      </div>
+
+      <motion.nav className={`fixed top-0 right-0 bottom-0 z-20  ${isVisible ? '': 'hidden'} ${open? 'z-50': ''}`}
+        initial={false}
+        animate={open ? "" : "closed"}
+        custom={height}
+        ref={containerRef}
+        >
+          <MenuToggle toggle={handleButtonCLick} />   
+      </motion.nav>
+
+
+      <motion.nav className={`fixed top-0 right-0 bottom-0 w-[100%] md:w-[650px] ${isVisible ? '': 'hidden'} ${open ? 'z-40': ''}`}
         initial={false}
         animate={open ? "open" : "closed"}
         custom={height}
         ref={containerRef}
-      >
-        <motion.div className={`absolute top-0 right-0 bottom-0 w-[100%] md:w-[650px] dark:bg-[#fff] bg-[#1c1d20] `} variants={sidebar} />
-          <div className={`${open ? 'z-50' : '-z-10'}`}>
-            <Navigation open={open} />
-          </div>
-          <MenuToggle toggle={handleButtonCLick} />
-        </motion.nav>
-        <motion.div
-          className={`fixed top-0 left-0 bottom-0 md:right-[0px] z-30 overlay ${open? '' : 'hidden'}`}
-        />
-    </motion.div>
+        >
+          <motion.div className={`absolute top-0 right-0 bottom-0 w-[100%] md:w-[650px] bg-[#1c1d20] `} variants={sidebar} />
+          <Navigation open={open} />
+      </motion.nav>
+    </div>
   );
 };

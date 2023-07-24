@@ -8,7 +8,7 @@ import Contact from '@/components/homepage/contact';
 
 const Work = () => {
   return (
-    <div className='z-20'>
+    <div className=''>
         <Sidebar scrollThreshold={100} />
         <Curtain />
         <div className='bg-[#FFFEFE]'>

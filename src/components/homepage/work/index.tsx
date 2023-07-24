@@ -53,7 +53,7 @@ export default function Work() {
                 {/* <ul> */}
                     {items.map((item,index) => (
                         <li 
-                            className="  py-[55px] border-b border-gray-300"
+                            className="  py-[55px] border-b border-gray-300 "
                             key={index}
                             onMouseOver={() => {
                                 setButtonVisible(true);
@@ -129,7 +129,7 @@ export default function Work() {
                 {/* <ul> */}
 
                 <div className='mt-20 md:flex w-full md:space-x-4 space-y-20 md:space-y-0'>
-                  <li className="z-10">
+                  <li className="">
                     <div className='mt-4 w-full flex justify-center'>
                       <div>
                         <img src={items[0].image} alt='project image'/>
@@ -143,7 +143,7 @@ export default function Work() {
                       </div>
                     </div>
                   </li>
-                  <li className="z-10">
+                  <li className="">
                     <div className='w-full flex justify-center'>
                       <div>
                         <img src={items[1].image} alt='project image'/>
