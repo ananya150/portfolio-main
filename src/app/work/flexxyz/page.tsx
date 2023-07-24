@@ -23,7 +23,7 @@ const Flexxyz = () => {
             <MacImage imageUrl='/flex2.png' />
           </div>
           <div className='bg-[#1c1d20]'>
-            <AboutProduct />
+            <AboutProduct product="flexxyz" />
             <Contact />
           </div>
           

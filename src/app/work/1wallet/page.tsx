@@ -23,7 +23,7 @@ const OneWallet = () => {
             <MacImage imageUrl='/1wallet2.png' />
           </div>
           <div className='bg-[#1c1d20]'>
-            <AboutProduct />
+            <AboutProduct product="1wallet" />
             <Contact />
           </div>
           

@@ -23,7 +23,7 @@ const ZkAge = () => {
             <MacImage imageUrl='/zkage.png' />
           </div>
           <div className='bg-[#1c1d20]'>
-            <AboutProduct />
+            <AboutProduct product="zkage" />
             <Contact />
           </div>
           
