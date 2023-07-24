@@ -32,14 +32,14 @@ const ContactForm = () => {
                 <div className='md:w-3/4 text-white'>
                     <span className='md:text-[80px] text-[40px] font-[500] font-satoshi'>Let&apos;s start a</span><br/>
                     <span className='md:text-[80px] text-[40px] font-[500] font-satoshi'>project together</span>
-                    <div className='mt-[19vh] border-t border-gray-600 '>
+                    <div className='mt-[19vh] border-t border-gray-600 z-20 '>
                         <form id="fs-frm" name="simple-contact-form" acceptCharset="utf-8" action="https://formspree.io/f/xknlgrwz" method="post">
 
                             <div className='pt-12 pb-6 flex items-center space-x-16 border-b border-gray-600'>
                                 <span className='font-[400] font-satoshi text-[16px] text-gray-400'>01</span>
                                 <div className='w-full'>
                                     <span className='font-satoshi font-[500] text-[25px]'>What&apos;s your name?</span><br/><br/>
-                                    <input type="text" name="name" id="full-name" placeholder="John Doe *" className='h-16 bg-transparent focus:border-[#1c1d20] focus:outline-none  w-full' required={true} />
+                                    <input type="text" name="name" id="full-name" placeholder="John Doe *" className='h-16 bg-transparent focus:border-[#1c1d20] focus:outline-none  w-full z-20' required={true} />
                                 </div>
                             </div>
 
