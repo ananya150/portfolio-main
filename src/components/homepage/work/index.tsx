@@ -129,7 +129,7 @@ export default function Work() {
                 {/* <ul> */}
 
                 <div className='mt-20 md:flex w-full md:space-x-4 space-y-20 md:space-y-0'>
-                  <li className="">
+                  <li onClick={() => {router.push(items[0].url)}} className="">
                     <div className='mt-4 w-full flex justify-center'>
                       <div>
                         <img src={items[0].image} alt='project image'/>
@@ -143,7 +143,7 @@ export default function Work() {
                       </div>
                     </div>
                   </li>
-                  <li className="">
+                  <li onClick={() => {router.push(items[1].url)}} className="">
                     <div className='w-full flex justify-center'>
                       <div>
                         <img src={items[1].image} alt='project image'/>

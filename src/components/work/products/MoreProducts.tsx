@@ -19,13 +19,13 @@ const MoreProducts = () => {
         </div>
       </div>
       <div className='lg:hidden space-y-20 mt-[14vh] w-full'>
-        <div className='flex justify-center space-x-5'>
-        <Link href='https://github.com/ananya150/orderbook-js' target='_blank'><MagneticButton className="bg-[#1c1d20] h-[70px] w-[200px]"><span className='font-satoshi md:text-[17px] text-[14px] font-[400]'>Nodejs orderbook</span></MagneticButton></Link>
-        <Link href='https://github.com/ananya150/Trading-Bot' target='_blank'><MagneticButton className="bg-[#1c1d20] h-[70px] w-[200px]"><span className='font-satoshi md:text-[17px] text-[14px] font-[400]'>Trading bots</span></MagneticButton></Link>
+        <div className='flex justify-center space-x-3'>
+        <Link href='https://github.com/ananya150/orderbook-js' target='_blank'><MagneticButton className="bg-[#1c1d20] h-[70px] md:w-[200px] w-[160px]"><span className='font-satoshi md:text-[17px] text-[12px] font-[400]'>Nodejs orderbook</span></MagneticButton></Link>
+        <Link href='https://github.com/ananya150/Trading-Bot' target='_blank'><MagneticButton className="bg-[#1c1d20] h-[70px] md:w-[200px] w-[160px]"><span className='font-satoshi md:text-[17px] text-[12px] font-[400]'>Trading bots</span></MagneticButton></Link>
         </div>
         <div className='flex justify-center space-x-5'>
-          <Link href='https://github.com/ananya150/portfolio-main' target='_blank'><MagneticButton className="bg-[#1c1d20] h-[70px] w-[200px]"><span className='font-satoshi md:text-[17px] text-[14px] font-[400]'>Portfolio</span></MagneticButton></Link>
-          <Link href='https://github.com/ananya150/blog' target='_blank'><MagneticButton className="bg-[#1c1d20] h-[70px] w-[200px]"><span className='font-satoshi md:text-[17px] text-[14px] font-[400]'>Blogs</span></MagneticButton></Link>
+          <Link href='https://github.com/ananya150/portfolio-main' target='_blank'><MagneticButton className="bg-[#1c1d20] h-[70px] md:w-[200px] w-[160px]"><span className='font-satoshi md:text-[17px] text-[142x] font-[400]'>Portfolio</span></MagneticButton></Link>
+          <Link href='https://github.com/ananya150/blog' target='_blank'><MagneticButton className="bg-[#1c1d20] h-[70px] md:w-[200px] w-[160px]"><span className='font-satoshi md:text-[17px] text-[12px] font-[400]'>Blogs</span></MagneticButton></Link>
         </div>
       </div>
 

@@ -108,7 +108,10 @@ const ProductsList = () => {
         <div className='md:hidden'>
             <div className='mt-20 md:flex w-full md:space-x-4 space-y-20 md:space-y-0'>
                 {items.map((item,index) => (
-                    <li key={index} className="z-10">
+                    <li key={index} 
+                        className="z-10"
+                        onClick={() => {router.push(item.url)}}
+                        >
                     <div className='mt-4 w-full flex justify-center'>
                         <div>
                         <img src={item.image} alt='project image'/>

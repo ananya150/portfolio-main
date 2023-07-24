@@ -6,6 +6,7 @@ import {
     MotionValue
   } from "framer-motion";
 import MagneticButton from '@/components/common/MagneticButton';
+import { useRouter } from 'next/navigation';
 
 function useParallax(value: MotionValue<number>, distanceDown: number, distanceUp: number) {
     return useTransform(value, [0, 1], [-distanceUp, distanceDown]);
@@ -17,6 +18,7 @@ const AboutProduct = () => {
     const { scrollYProgress } = useScroll({ target: ref });
     const y1 = useParallax(scrollYProgress, 200 ,100);
     const y2 = useParallax(scrollYProgress, 160 ,160);
+    const router = useRouter();
 
 
   return (
@@ -81,7 +83,7 @@ const AboutProduct = () => {
             </motion.div>
 
             <motion.div style={{y:y2}}  className='flex  justify-center z-20 mt-10'>
-                <MagneticButton className="bg-[#445DE9] h-44 w-44 ">
+                <MagneticButton onClick={() => {router.push('/work')}} className="bg-[#445DE9] h-44 w-44 ">
                     <span className='font-satoshi text-[18px] font-[400]'> ↖ All products </span>
                 </MagneticButton>
             </motion.div>
@@ -155,7 +157,7 @@ const AboutProduct = () => {
             </div>
 
             <motion.div style={{y:y2}}  className='flex justify-center z-20 '>
-                <MagneticButton className="bg-[#445DE9] h-28 w-28 ">
+                <MagneticButton onClick={() => {router.push('/work')}} className="bg-[#445DE9] h-28 w-28 ">
                     <span className='font-satoshi text-[18px] font-[400]'> ↖ All products </span>
                 </MagneticButton>
             </motion.div>

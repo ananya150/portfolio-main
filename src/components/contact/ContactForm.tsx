@@ -86,18 +86,18 @@ const ContactForm = () => {
                         </div>
                     </div>
                 </div>
-                <div className='pb-60 flex space-x-20 items-start lg:hidden'>
+                <div className='pb-60 flex space-x-12 items-start lg:hidden'>
                     <div>
-                        <span className='text-gray-500 font-satoshi font-[400] text-[15px]'>Contact Details</span>
+                        <span className='text-gray-500 font-satoshi font-[400] text-[12px]'>Contact Details</span>
                         <br/><br/>
-                        <span className='text-white font-satoshi font-[400] text-[20px]'>akblockchain15@gmail.com</span>
+                        <span className='text-white font-satoshi font-[400] text-[15px]'>akblockchain15@gmail.com</span>
                         <br/><br/>
-                        <span className='text-white font-satoshi font-[400] text-[20px]'>+91 9024180290</span>
+                        <span className='text-white font-satoshi font-[400] text-[15px]'>+91 9024180290</span>
                     </div>
                     <div>
-                        <span className='text-gray-500 font-satoshi font-[400] text-[15px]'>Location</span>
+                        <span className='text-gray-500 font-satoshi font-[400] text-[12px]'>Location</span>
                         <br/><br/>
-                        <span className='text-white font-satoshi font-[400] text-[20px]'>Mumbai, India</span>
+                        <span className='text-white font-satoshi font-[400] text-[15px]'>Mumbai, India</span>
                     </div>
                 </div>
             </div>
